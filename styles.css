@@ -1,0 +1,96 @@
+/* Typora-like Code Highlighting for Obsidian */
+
+/* 1. Code Block Container Styling */
+.markdown-source-view.mod-cm6 .cm-content pre,
+.markdown-rendered pre {
+    background-color: #f6f8fa !important;
+    border: 1px solid #e1e4e8 !important;
+    border-radius: 6px !important;
+    padding: 1em !important;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
+    font-size: 0.9em !important;
+    line-height: 1.45 !important;
+}
+
+/* 2. Syntax Highlighting - Prism (Reading Mode) */
+.markdown-rendered code[class*="language-"],
+.markdown-rendered pre[class*="language-"] {
+    color: #24292e !important;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #6a737d !important;
+    font-style: italic;
+}
+
+.token.namespace {
+    opacity: .7;
+}
+
+.token.string,
+.token.attr-value {
+    color: #032f62 !important;
+}
+
+.token.punctuation,
+.token.operator {
+    color: #24292e !important;
+}
+
+.token.entity,
+.token.url,
+.token.symbol,
+.token.number,
+.token.boolean,
+.token.variable,
+.token.constant,
+.token.property,
+.token.regex,
+.token.inserted {
+    color: #005cc5 !important;
+}
+
+.token.atrule,
+.token.keyword,
+.token.attr-name,
+.language-autohotkey .token.selector {
+    color: #d73a49 !important;
+}
+
+.token.function,
+.token.deleted,
+.language-autohotkey .token.tag {
+    color: #6f42c1 !important;
+}
+
+.token.tag,
+.token.selector,
+.language-autohotkey .token.keyword {
+    color: #22863a !important;
+}
+
+/* 3. Syntax Highlighting - CodeMirror 6 (Live Preview) */
+.cm-s-obsidian .cm-comment { color: #6a737d !important; font-style: italic; }
+.cm-s-obsidian .cm-string { color: #032f62 !important; }
+.cm-s-obsidian .cm-keyword { color: #d73a49 !important; }
+.cm-s-obsidian .cm-number { color: #005cc5 !important; }
+.cm-s-obsidian .cm-def { color: #6f42c1 !important; }
+.cm-s-obsidian .cm-variable { color: #e36209 !important; }
+.cm-s-obsidian .cm-type { color: #d73a49 !important; }
+.cm-s-obsidian .cm-property { color: #005cc5 !important; }
+.cm-s-obsidian .cm-operator { color: #24292e !important; }
+
+/* CodeMirror 6 Specific Tags */
+.nav-folder-title, .nav-file-title { font-family: inherit; }
+
+/* Inline Code */
+.markdown-source-view.mod-cm6 .cm-content code,
+.markdown-rendered code {
+    background-color: rgba(27, 31, 35, 0.05) !important;
+    border-radius: 3px !important;
+    padding: 0.2em 0.4em !important;
+    font-size: 85% !important;
+}
